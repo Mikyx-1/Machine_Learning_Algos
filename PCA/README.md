@@ -11,3 +11,6 @@ Step 1: Initialise a matrix $W \in \mathbb{R}^{d1*d2}$
 Step 2: Project the new data points to new plane: $x_{new} = W \cdot x$
 
 Step 3: Minimise ${\sigma^2}_{x_n}$ by using Gradient Descent or Lagrangian method
+
+
+**Updating**

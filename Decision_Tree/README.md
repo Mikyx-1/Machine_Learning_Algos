@@ -12,15 +12,15 @@ It works by splitting the data into groups that become more homogeneous with res
 A decision tree aims to minimize **impurity** — the amount of disorder or mixed classes in the branches. Different metrics are used to measure impurity:
 
 - **Gini Impurity (Classification)**:
-  $$
+  $
   Gini = 1 - \sum p_i^2
-  $$
+  $
   Where $p_i$ is the proportion of samples in class $i$. Lower Gini means purer groups.
 
 - **Entropy (Classification)**:
-  $$
+  $
   Entropy = -\sum p_i \log_2(p_i)
-  $$
+  $
   Entropy measures unpredictability, and the goal is to minimize it.
 
 - **Mean Squared Error (Regression)**:
@@ -63,9 +63,9 @@ Possible split at `Age <= 27.5`:
 
 **Gini Formula:**
 
-$$
+$
 Gini = 1 - \sum p_i^2
-$$
+$
 
 Where $p_i$ is the proportion of each class in the group.
 
@@ -76,14 +76,14 @@ Where $p_i$ is the proportion of each class in the group.
 
 Class proportions:
 
-- `Yes`: $$ \frac{1}{2} = 0.5 $$
-- `No`: $$ \frac{1}{2} = 0.5 $$
+- `Yes`: $ \frac{1}{2} = 0.5 $
+- `No`: $ \frac{1}{2} = 0.5 $
 
 Gini impurity:
 
-$$
+$
 Gini_1 = 1 - (0.5^2 + 0.5^2) = 1 - (0.25 + 0.25) = 1 - 0.5 = 0.5
-$$
+$
 
 **Group 2 (`Age > 27.5`):**
 
@@ -97,9 +97,9 @@ Class proportions:
 
 Gini impurity:
 
-$$
+$
 Gini_2 = 1 - (0.67^2 + 0.33^2) = 1 - (0.4489 + 0.1089) = 1 - 0.5578 = 0.442
-$$
+$
 
 **Weighted Gini Impurity:**
 
